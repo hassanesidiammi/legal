@@ -1,0 +1,37 @@
+name: Mustafa Radix Sub-Theme
+description: Custum radix theme "Mustafa".
+screenshot: screenshot.png
+core: 8.x
+# version: VERSION
+engine: twig
+type: theme
+base theme: radix
+
+regions:
+  navbar_branding: Navbar branding
+  navbar_left:  Navbar left
+  navbar_right: Navbar right
+  header: Header
+  content: Content
+  page_bottom: Page bottom
+  footer: Footer
+
+libraries:
+  - radix/style
+  - mustafa_radix/style
+
+libraries-override:
+  radix/bootstrap: false
+
+ckeditor_stylesheets:
+  - assets/css/mustafa_radix.style.css
+
+component-libraries:
+  mustafa_radix:
+    paths:
+      - ./src/components
+
+# Information added by Drupal.org packaging script on 2019-10-07
+version: '8.x-4.6'
+project: 'radix'
+datestamp: 1570446487
