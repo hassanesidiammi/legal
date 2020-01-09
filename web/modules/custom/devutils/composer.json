@@ -1,0 +1,21 @@
+{
+    "name": "org/devutils",
+    "description": "This extension provides the "Radix" commands for Drush.",
+    "type": "drupal-drush",
+    "authors": [
+        {
+            "name": "Hassane SIDI AMMI",
+            "email": "h.sidiammi@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0"
+    },
+    "extra": {
+        "drush": {
+            "services": {
+                "drush.services.yml": "^10"
+            }
+        }
+    }
+}
