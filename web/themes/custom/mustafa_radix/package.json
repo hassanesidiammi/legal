@@ -1,6 +1,6 @@
 {
   "name": "mustafa_radix",
-  "description": "Custum radix theme "Mustafa".",
+  "description": "Custum radix theme \"Mustafa\"",
   "private": true,
   "scripts": {
     "postinstall": "find node_modules/ -name '*.info' -type f -delete",
@@ -14,7 +14,7 @@
     "browser-sync": "^2.26.7",
     "browser-sync-webpack-plugin": "^2.0.1",
     "cross-env": "^5.1",
-    "jquery": "^3.3.1",
+    "jquery": "^3.4.1",
     "laravel-mix": "^4.0.15",
     "popper.js": "^1.14.7",
     "resolve-url-loader": "2.3.1",
