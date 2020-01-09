@@ -1,0 +1,4 @@
+administer devutils configuration:
+  title: 'Administer devutils configuration'
+  description: 'Optional description.'
+  restrict access: true
