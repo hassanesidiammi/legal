@@ -1,6 +1,6 @@
 uuid: 20a4c955-bc65-4e2f-9d47-69afe0e4a65f
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.tools
@@ -13,7 +13,7 @@ _core:
 id: mustafa_radix_tools
 theme: mustafa_radix
 region: navbar_branding
-weight: 0
+weight: -4
 provider: null
 plugin: 'system_menu_block:tools'
 settings:

@@ -10,8 +10,8 @@ _core:
   default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
 id: mustafa_radix_powered
 theme: mustafa_radix
-region: navbar_branding
-weight: 10
+region: footer
+weight: -5
 provider: null
 plugin: system_powered_by_block
 settings:

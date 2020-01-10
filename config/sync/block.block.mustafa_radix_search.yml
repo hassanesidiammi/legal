@@ -1,6 +1,6 @@
 uuid: cd92a3e4-46bc-4e69-a570-5e4be19daed9
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - search
@@ -11,7 +11,7 @@ _core:
 id: mustafa_radix_search
 theme: mustafa_radix
 region: navbar_branding
-weight: -1
+weight: -5
 provider: null
 plugin: search_form_block
 settings:
