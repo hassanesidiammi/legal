@@ -1,0 +1,14 @@
+uuid: eda011a5-02d8-4bf3-81e1-4ee137f9a9a8
+name: Legals
+mail: h.sidiammi@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

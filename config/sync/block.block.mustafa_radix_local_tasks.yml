@@ -1,0 +1,22 @@
+uuid: 8d088512-d8e4-44f8-af47-2d4c5192d89a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - mustafa_radix
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: mustafa_radix_local_tasks
+theme: mustafa_radix
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

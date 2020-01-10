@@ -1,0 +1,22 @@
+uuid: 7b292a06-ee05-46d6-badf-ded41b18d629
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mustafa_radix
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: mustafa_radix_content
+theme: mustafa_radix
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

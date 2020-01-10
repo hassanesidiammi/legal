@@ -1,0 +1,20 @@
+uuid: 71d56f29-36ff-446a-ada0-8e39cc42cf00
+langcode: en
+status: true
+dependencies:
+  theme:
+    - mustafa_radix
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: mustafa_radix_local_actions
+theme: mustafa_radix
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

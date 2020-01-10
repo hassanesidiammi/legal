@@ -1,0 +1,14 @@
+uuid: 25c9acb5-42cb-4db7-8dfa-b5cb15f2526f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - h.sidiammi@gmail.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

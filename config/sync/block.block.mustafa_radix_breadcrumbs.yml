@@ -1,0 +1,22 @@
+uuid: ec772933-d46b-485b-9d1e-4c5915fbf5e5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mustafa_radix
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: mustafa_radix_breadcrumbs
+theme: mustafa_radix
+region: navbar_branding
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

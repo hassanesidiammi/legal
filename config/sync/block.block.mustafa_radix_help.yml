@@ -1,0 +1,22 @@
+uuid: 301c5afb-9033-4cb4-b9bb-2550ccc2ca7b
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - mustafa_radix
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: mustafa_radix_help
+theme: mustafa_radix
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

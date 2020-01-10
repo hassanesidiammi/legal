@@ -1,0 +1,25 @@
+uuid: 9159a0e6-e15f-43d2-9340-180bb9b9d27f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mustafa_radix
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: mustafa_radix_branding
+theme: mustafa_radix
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }
