@@ -8,3 +8,4 @@ dependencies:
   - admin_toolbar
   - admin_toolbar_tools
   - components
+  - file_browser
