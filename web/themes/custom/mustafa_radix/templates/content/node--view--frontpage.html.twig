@@ -1,0 +1,38 @@
+{#
+/**
+ * @file
+ * Template for a Article component, teaser mod.
+ */
+#}
+{%
+    set classes = [
+    'node',
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    node.bundle|clean_class,
+    node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
+    'row'
+  ]
+  %}
+  <article{{ attributes.addClass(classes) }}>
+    {% block content %}
+    <div class="col-12">
+      </div>
+      {% if node.title[0].value %}
+        <h2 class="col-md-12">
+          {{ title_prefix }}
+          {{ node.title[0].value }}
+          {{ title_suffix }}
+        </h2>
+      {% endif %}
+      {% if content.field_image[0]|length > 0 %}
+          <div class="col-md-2">{{ content.field_image }}</div>
+          <div class="col-md-10 pl-3">{{ content|without('field_image') }}</div>
+      {% else %}
+      <div class="col-md-12">
+        {{ content }}
+      </div>
+      {% endif %}
+    {% endblock %}
+  </article>

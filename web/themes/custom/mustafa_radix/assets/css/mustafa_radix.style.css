@@ -9584,3 +9584,7 @@ a.text-dark:hover, a.text-dark:focus {
 .invisible {
   visibility: hidden !important;
 }
+
+.views-row article {
+  padding-bottom: 2.5rem;
+}
