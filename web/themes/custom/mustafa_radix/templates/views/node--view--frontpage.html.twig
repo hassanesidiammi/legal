@@ -17,14 +17,14 @@
   %}
   <article{{ attributes.addClass(classes) }}>
     {% block content %}
-    <div class="col-12">
-      </div>
       {% if node.title[0].value %}
-        <h2 class="col-md-12">
+        <span class="h4 col-md-12" href="{{ path('entity.node.canonical', {'node': node.id}) }}">
           {{ title_prefix }}
-          {{ node.title[0].value }}
+          <a href="{{ path('entity.node.canonical', {'node': node.id}) }}">
+            {{ node.title[0].value }}
+          </a>
           {{ title_suffix }}
-        </h2>
+        </span>
       {% endif %}
       {% if content.field_image[0]|length > 0 %}
           <div class="col-md-2">{{ content.field_image }}</div>

@@ -12,7 +12,7 @@
   {%- for item in links -%}
     <li{{ item.attributes.addClass('nav-item') }}>
       {%- if item.link -%}
-        <a href="{{ item.link['#url'] }}" class="nav-link btn">{{ item.link['#title'] }}</a>
+        <a href="{{ item.link['#url'] }}" class="nav-link btn btn-sm btn-outline-warning mt-3">{{ item.link['#title'] }}</a>
       {%- elseif item.text_attributes -%}
         <span{{ item.text_attributes.addClass('nav-link') }}>{{ item.text }}</span>
       {%- else -%}
