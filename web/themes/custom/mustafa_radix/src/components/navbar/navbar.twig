@@ -21,7 +21,7 @@
 {% set placement = placement ?? '' %}
 {% set color = color ?? 'light' %}
 
-<nav class="navbar navbar-expand-lg justify-content-between navbar-{{ color }} {{ placement }} {{ utility_classes|join(' ') }}">
+<nav class="navbar navbar-expand-lg justify-content-between navbar-{{ color }} {{ placement }} {{ utility_classes|join(' ') }}" style="margin-top: {{ margin_top }};">
   {% if container %}
     <div class="{{ container }}">
   {% endif %}
@@ -37,6 +37,10 @@
   <div class="collapse navbar-collapse">
     {% block left %}
       {{ left }}
+    {% endblock %}
+
+    {% block center %}
+      {{ center }}
     {% endblock %}
 
     {% block right %}

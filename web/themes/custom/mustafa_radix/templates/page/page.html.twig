@@ -1,0 +1,81 @@
+{#
+/**
+ * @file
+ * Template for the main page.
+ */
+#}
+<div class="page">
+  {% embed '@mustafa_radix/navbar/navbar_social.twig' with {
+    placement: fix_social ? 'fixed-top' : '',
+    container: fix_social ? 'fixed' : '',
+    color: 'dark',
+    height: '1.5rem',
+    utility_classes: ['bg-secondary', 'p-0', 'justify-content-center'],
+  } %}
+  {% endembed %}
+
+  {% embed '@mustafa_radix/navbar/navbar.twig' with {
+    placement: fix_navbar ? 'sticky-top' : '',
+    container: fix_navbar ? 'fixed' : '',
+    margin_top: fix_social ? '1.5rem' : '',
+    color: 'light',
+    utility_classes: ['bg-light'],
+  } %}
+
+    {% block branding %}
+      {% if page.navbar_branding %}
+        {{ page.navbar_branding }}
+      {% endif %}
+    {% endblock %}
+
+    {% block left %}
+      {% if page.navbar_left %}
+        <div class="mr-auto">
+          {{ page.navbar_left }}
+        </div>
+      {% endif %}
+    {% endblock %}
+
+    {% block center %}
+      {% if page.navbar_center %}
+        <div class="mr-auto">
+          {{ page.navbar_center }}
+        </div>
+      {% endif %}
+    {% endblock %}
+
+    {% block right %}
+      {% if page.navbar_right %}
+        {{ page.navbar_right }}
+      {% endif %}
+    {% endblock %}
+  {% endembed %}
+
+  <main class="py-5 overflow-auto">
+    {% if page.header %}
+      <header class="page__header mb-3">
+        <div class="container">
+          {{ page.header }}
+        </div>
+      </header>
+    {% endif %}
+
+    {% if page.content %}
+      <div class="page__content">
+        <div class="container">
+          {{ page.content }}
+        </div>
+      </div>
+    {% endif %}
+  </main>
+
+  {% if page.footer %}
+    <footer class="page__footer">
+      <div class="container">
+        <div class="d-flex justify-content-md-between align-items-md-center">
+          {{ page.footer }}
+        </div>
+      </div>
+    </footer>
+  {% endif %}
+</div>

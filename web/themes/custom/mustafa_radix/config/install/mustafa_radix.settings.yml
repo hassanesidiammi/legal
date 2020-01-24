@@ -1,0 +1,9 @@
+phone: '0699669966'
+themail: 'mail@exemple.com'
+facebook_url: 'https://www.facebook.com/'
+twitter_url: 'https://twitter.com/'
+linkedin_url: 'https://www.linkedin.com/'
+instagram_url: 'https://www.instagram.com/'
+rss_url: 'rss.xml'
+fix_social: 1
+fix_navbar: 1
