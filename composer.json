@@ -75,6 +75,8 @@
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.8.0",
         "drupal/core-composer-scaffold": "^8.8.0",
+        "drupal/devel": "^2.1",
+        "drupal/ds": "^3.5",
         "drupal/file_browser": "^1.2",
         "drupal/panelbutton": "^1.2",
         "drupal/radix": "^4.6",
