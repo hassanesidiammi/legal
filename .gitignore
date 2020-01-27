@@ -9,6 +9,7 @@
 !/web/libraries/
 /web/libraries/*
 !/web/libraries/colorbutton/
+!/web/libraries/panelbutton/
 
 # Ignore sensitive information
 /web/sites/*/settings.php
