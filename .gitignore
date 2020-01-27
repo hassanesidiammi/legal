@@ -5,7 +5,10 @@
 /web/modules/contrib/
 /web/themes/contrib/
 /web/profiles/contrib/
-/web/libraries/
+
+!/web/libraries/
+/web/libraries/*
+!/web/libraries/colorbutton/
 
 # Ignore sensitive information
 /web/sites/*/settings.php
