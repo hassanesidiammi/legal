@@ -9741,3 +9741,15 @@ a.text-dark:hover, a.text-dark:focus {
   margin-right: 5%;
   width: 95%;
 }
+
+.nav.navbar-nav {
+  font-size: 1.5rem;
+  font-weight: bold;
+  /*font-family: Bebas+Neue;*/
+  /* font-family: -webkit-body; */
+  font-family: "'Source Sans Pro', sans-serif'";
+}
+
+.bg-secondary {
+  background-color: #7fa9ce !important;
+}

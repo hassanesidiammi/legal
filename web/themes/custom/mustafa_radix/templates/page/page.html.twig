@@ -49,24 +49,83 @@
         {{ page.navbar_right }}
       {% endif %}
     {% endblock %}
+
   {% endembed %}
 
-  <main class="py-5 overflow-auto">
+  <main class="container py-5 overflow-auto">
+    {% block header %}
     {% if page.header %}
-      <header class="page__header mb-3">
-        <div class="container">
+      <header class="row mb-3 page__header">
+        <div class="col-12">
           {{ page.header }}
         </div>
       </header>
     {% endif %}
+    {% endblock %}
 
-    {% if page.content %}
-      <div class="page__content">
-        <div class="container">
-          {{ page.content }}
+    <div class="row">
+      {% block sidebars %}
+      {% if page.sidebar_first or page.sidebar_second %}
+      <div class="col-lg-3 order-2">
+        <div class="row">
+          {% block sidebar_first %}
+          {% if page.sidebar_first %}
+          <div class="col-12 sidebar_first">
+            {{ page.sidebar_first }}
+          </div>
+          {% endif %}
+          {% endblock %}
+
+          {% block sidebar_second %}
+          {% if page.sidebar_second %}
+          <div class="col-12 sidebar_second">
+            {{ page.sidebar_second }}
+          </div>
+          {% endif %}
+          {% endblock %}
         </div>
       </div>
-    {% endif %}
+      {% endif %}
+      {% endblock %}
+      <div class="col-lg-9 order-1 highlighted">
+        {% block highlighted %}
+        {% if page.highlighted %}
+        <div class="row my-2">
+         <div class="col-12">
+          {{ page.highlighted }}
+         </div>
+        </div>
+        {% endif %}
+        {% endblock %}
+    
+        {% block top %}
+        {% if page.top %}
+        <div class="row">
+          <div class="col-12">
+            {{ page.top }}
+          </div>
+        </div>
+        {% endif %}
+        {% endblock %}
+
+        {% block content %}
+        {% if page.content %}
+        {{ page.content }}
+        {% endif %}
+        {% endblock %}
+  
+        {% block bottom %}
+        {% if page.bottom %}
+        <div class="row">
+          <div class="col-12">
+            {{ page.bottom }}
+          </div>
+        </div>
+        {% endif %}
+        {% endblock %}
+  
+      </div>
+    </div>
   </main>
 
   {% if page.footer %}

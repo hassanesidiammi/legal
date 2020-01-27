@@ -13,8 +13,15 @@ regions:
   navbar_center:  Navbar center
   navbar_right: Navbar right
   header: Header
+
+  sidebar_first: Premery sidebar
+  sidebar_second: Secondary sidebar
+
+  highlighted: highlighted
+  top: Top
   content: Content
-  page_bottom: Page bottom
+  bottom: Bottom
+
   footer: Footer
 
 libraries:
