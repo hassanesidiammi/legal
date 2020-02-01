@@ -79,6 +79,8 @@
         "drupal/panelbutton": "^1.2",
         "drupal/paragraphs": "^1.10",
         "drupal/radix": "^4.6",
+        "drupal/slick_extras": "^1.0@RC",
+        "drupal/slick_views": "^2.1",
         "drupal/taxonomy_menu": "^3.4",
         "drush/drush": "^10.1",
         "enyo/dropzone": "^5.5",
