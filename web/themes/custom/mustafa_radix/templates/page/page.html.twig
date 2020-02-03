@@ -4,6 +4,11 @@
  * Template for the main page.
  */
 #}
+
+{% set content_col = 9 %}
+{% set sidebar_col = 3 %}
+
+{% block page %}
 <div class="page">
   {% embed '@mustafa_radix/navbar/navbar_social.twig' with {
     placement: fix_social ? 'fixed-top' : '',
@@ -66,7 +71,7 @@
     <div class="row">
       {% block sidebars %}
       {% if page.sidebar_first or page.sidebar_second %}
-      <div class="col-lg-3 order-2">
+      <div class="col-lg-{{ sidebar_col }} order-md-2 sidebars-wrapper">
         <div class="row">
           {% block sidebar_first %}
           {% if page.sidebar_first %}
@@ -87,7 +92,7 @@
       </div>
       {% endif %}
       {% endblock %}
-      <div class="col-lg-9 order-1 highlighted">
+      <div class="col-lg-{{ content_col }} order-md-1 highlighted">
         {% block highlighted %}
         {% if page.highlighted %}
         <div class="row my-2">
@@ -138,3 +143,4 @@
     </footer>
   {% endif %}
 </div>
+{% endblock page %}

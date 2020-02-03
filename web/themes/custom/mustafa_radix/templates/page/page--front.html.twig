@@ -1,0 +1,15 @@
+{#
+/**
+ * @file
+ * Template for the main page.
+ */
+#}
+
+{% extends "page.html.twig" %}
+
+{% block page %}
+  {% set content_col = 8 %}
+  {% set sidebar_col = 4 %}
+
+  {{ parent() }}
+{% endblock page %}

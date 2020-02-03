@@ -22,20 +22,4 @@ function mustafa_radix_preprocess_page(&$variables) {
     $variables['rss_url'] = theme_get_setting('rss_url');
     $variables['show_credit_link'] = theme_get_setting('show_credit_link');
   
-  
-    //To get the current URL
-    $current_url  = \Drupal::request()->getRequestUri();
-    $current_path = explode("/", $current_url);
-    $variables['current_path'] = $current_path[2];
-    
-    
-    // Slider
-    // Assign Variable for slider
-    if ($variables['is_front']) {
-      if (theme_get_setting('show_slideshow','advocate_zymphonies_theme') == 1) {
-        $variables['show_slideshow'] = 1;
-        $variables['slider_content'] = advocate_zymphonies_theme_get_slider_content();
-      }
-    }
-  
   }
